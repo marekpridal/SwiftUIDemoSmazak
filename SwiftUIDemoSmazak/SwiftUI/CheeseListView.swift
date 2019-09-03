@@ -18,17 +18,7 @@ struct CheeseListView: View {
                 Button(action: {
                     self.viewModel.delegate?.showDetail(cheese: cheese)
                 }, label: {
-                    HStack {
-                        Image(systemName: cheese.type == .standard ? "heart.fill" : "heart.slash")
-                            .padding(.trailing, 15)
-                        VStack(alignment: .leading) {
-                            Text(cheese.formattedDate)
-                            Text(cheese.localizedName)
-                            Text(cheese.formattedWeight)
-                        }
-                        Spacer()
-                        Text(cheese.formattedPrice)
-                    }
+                    CheeseCellView(cheese: cheese)
                 })
             }
         }
