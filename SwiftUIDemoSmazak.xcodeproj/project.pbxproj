@@ -9,25 +9,27 @@
 /* Begin PBXBuildFile section */
 		DF60D76E231E771600BF47DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60D76D231E771600BF47DD /* AppDelegate.swift */; };
 		DF60D770231E771600BF47DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60D76F231E771600BF47DD /* SceneDelegate.swift */; };
-		DF60D772231E771600BF47DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60D771231E771600BF47DD /* ContentView.swift */; };
+		DF60D772231E771600BF47DD /* CheeseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60D771231E771600BF47DD /* CheeseListView.swift */; };
 		DF60D774231E771700BF47DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF60D773231E771700BF47DD /* Assets.xcassets */; };
 		DF60D777231E771700BF47DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF60D776231E771700BF47DD /* Preview Assets.xcassets */; };
 		DF60D77A231E771700BF47DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF60D778231E771700BF47DD /* LaunchScreen.storyboard */; };
 		DF7A61A7231E7B12001ED84B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A61A6231E7B12001ED84B /* AppCoordinator.swift */; };
 		DF7A61A9231E7B51001ED84B /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A61A8231E7B51001ED84B /* CoordinatorProtocol.swift */; };
+		DF7A61AC231E80BB001ED84B /* CheeseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A61AB231E80BB001ED84B /* CheeseListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF60D76A231E771600BF47DD /* SwiftUIDemoSmazak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemoSmazak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF60D76D231E771600BF47DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF60D76F231E771600BF47DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF60D771231E771600BF47DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF60D771231E771600BF47DD /* CheeseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheeseListView.swift; sourceTree = "<group>"; };
 		DF60D773231E771700BF47DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF60D776231E771700BF47DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF60D779231E771700BF47DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF60D77B231E771700BF47DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF7A61A6231E7B12001ED84B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		DF7A61A8231E7B51001ED84B /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		DF7A61AB231E80BB001ED84B /* CheeseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheeseListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				DF60D775231E771700BF47DD /* Preview Content */,
 				DF7A61A5231E7A8D001ED84B /* Storyboards */,
 				DF7A61A3231E7A6F001ED84B /* SwiftUI */,
+				DF7A61AA231E8098001ED84B /* ViewModels */,
 			);
 			path = SwiftUIDemoSmazak;
 			sourceTree = "<group>";
@@ -100,7 +103,7 @@
 		DF7A61A3231E7A6F001ED84B /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				DF60D771231E771600BF47DD /* ContentView.swift */,
+				DF60D771231E771600BF47DD /* CheeseListView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -119,6 +122,14 @@
 				DF60D778231E771700BF47DD /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DF7A61AA231E8098001ED84B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A61AB231E80BB001ED84B /* CheeseListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +206,9 @@
 				DF7A61A7231E7B12001ED84B /* AppCoordinator.swift in Sources */,
 				DF60D76E231E771600BF47DD /* AppDelegate.swift in Sources */,
 				DF7A61A9231E7B51001ED84B /* CoordinatorProtocol.swift in Sources */,
+				DF7A61AC231E80BB001ED84B /* CheeseListViewModel.swift in Sources */,
 				DF60D770231E771600BF47DD /* SceneDelegate.swift in Sources */,
-				DF60D772231E771600BF47DD /* ContentView.swift in Sources */,
+				DF60D772231E771600BF47DD /* CheeseListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

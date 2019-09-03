@@ -20,8 +20,8 @@ final class AppCoordinator {
     }
     
     private func showCheeseListViewController() {
-        let contentView = ContentView()
-        rootViewController.setViewControllers([UIHostingController(rootView: contentView)], animated: true)
+        let cheeseListView = CheeseListView(viewModel: CheeseListViewModel())
+        rootViewController.setViewControllers([UIHostingController(rootView: cheeseListView)], animated: true)
     }
     
     static func startApplicationCoordinator(window: UIWindow) -> AppCoordinator {
