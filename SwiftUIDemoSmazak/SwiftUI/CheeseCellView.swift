@@ -17,8 +17,17 @@ struct CheeseCellView: View {
                 .padding(.trailing, 15)
             VStack(alignment: .leading) {
                 Text(cheese.formattedDate)
+                    .font(.system(size: 13))
+                    .fontWeight(.medium)
+                    .padding(.bottom, 5)
                 Text(cheese.localizedName)
+                    .font(.system(size: 15))
+                    .fontWeight(.medium)
+                    .padding(.bottom, 5)
                 Text(cheese.formattedWeight)
+                    .font(.system(size: 13))
+                    .fontWeight(.medium)
+                    .padding(.bottom, 5)
             }
             Spacer()
             Text(cheese.formattedPrice)
