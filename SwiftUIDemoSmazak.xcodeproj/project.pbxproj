@@ -20,6 +20,7 @@
 		DFE6AF6E231E852B000885D6 /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6AF6D231E852B000885D6 /* ApiProtocol.swift */; };
 		DFE6AF70231E85A3000885D6 /* MockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6AF6F231E85A3000885D6 /* MockApi.swift */; };
 		DFE6AF72231E88BC000885D6 /* Cheese+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6AF71231E88BC000885D6 /* Cheese+Extension.swift */; };
+		DFE6AF75231E8AA8000885D6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFE6AF77231E8AA8000885D6 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DFE6AF6D231E852B000885D6 /* ApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
 		DFE6AF6F231E85A3000885D6 /* MockApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApi.swift; sourceTree = "<group>"; };
 		DFE6AF71231E88BC000885D6 /* Cheese+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cheese+Extension.swift"; sourceTree = "<group>"; };
+		DFE6AF76231E8AA8000885D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DF60D76D231E771600BF47DD /* AppDelegate.swift */,
 				DF60D76F231E771600BF47DD /* SceneDelegate.swift */,
 				DF60D77B231E771700BF47DD /* Info.plist */,
+				DFE6AF77231E8AA8000885D6 /* Localizable.strings */,
 			);
 			path = "App Support";
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF60D77A231E771700BF47DD /* LaunchScreen.storyboard in Resources */,
+				DFE6AF75231E8AA8000885D6 /* Localizable.strings in Resources */,
 				DF60D777231E771700BF47DD /* Preview Assets.xcassets in Resources */,
 				DF60D774231E771700BF47DD /* Assets.xcassets in Resources */,
 			);
@@ -253,6 +257,14 @@
 				DF60D779231E771700BF47DD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DFE6AF77231E8AA8000885D6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFE6AF76231E8AA8000885D6 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
