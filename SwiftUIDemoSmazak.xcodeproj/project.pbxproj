@@ -19,6 +19,7 @@
 		DFE6AF6B231E839A000885D6 /* Cheese.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6AF6A231E839A000885D6 /* Cheese.swift */; };
 		DFE6AF6E231E852B000885D6 /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6AF6D231E852B000885D6 /* ApiProtocol.swift */; };
 		DFE6AF70231E85A3000885D6 /* MockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6AF6F231E85A3000885D6 /* MockApi.swift */; };
+		DFE6AF72231E88BC000885D6 /* Cheese+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6AF71231E88BC000885D6 /* Cheese+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DFE6AF6A231E839A000885D6 /* Cheese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheese.swift; sourceTree = "<group>"; };
 		DFE6AF6D231E852B000885D6 /* ApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
 		DFE6AF6F231E85A3000885D6 /* MockApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApi.swift; sourceTree = "<group>"; };
+		DFE6AF71231E88BC000885D6 /* Cheese+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cheese+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				DFE6AF6A231E839A000885D6 /* Cheese.swift */,
+				DFE6AF71231E88BC000885D6 /* Cheese+Extension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				DF60D76E231E771600BF47DD /* AppDelegate.swift in Sources */,
 				DF7A61A9231E7B51001ED84B /* CoordinatorProtocol.swift in Sources */,
 				DF7A61AC231E80BB001ED84B /* CheeseListViewModel.swift in Sources */,
+				DFE6AF72231E88BC000885D6 /* Cheese+Extension.swift in Sources */,
 				DFE6AF6B231E839A000885D6 /* Cheese.swift in Sources */,
 				DF60D770231E771600BF47DD /* SceneDelegate.swift in Sources */,
 				DF60D772231E771600BF47DD /* CheeseListView.swift in Sources */,

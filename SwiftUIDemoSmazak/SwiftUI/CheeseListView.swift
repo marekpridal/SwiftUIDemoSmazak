@@ -13,7 +13,12 @@ struct CheeseListView: View {
     @ObservedObject var viewModel: CheeseListViewModel
 
     var body: some View {
-        Text("Hello World")
+        Group {
+            List(viewModel.cheeses) { cheese in
+                Text(cheese.localizedName)
+            }
+        }
+        .navigationBarTitle("CHEESE_LIST_VIEW_TITLE")
     }
 }
 
