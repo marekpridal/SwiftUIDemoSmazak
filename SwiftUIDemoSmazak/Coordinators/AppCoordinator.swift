@@ -21,6 +21,7 @@ final class AppCoordinator {
     
     private func showCheeseListViewController() {
         let cheeseListView = CheeseListView(viewModel: CheeseListViewModel(api: MockApi()))
+        cheeseListView.viewModel.delegate = self
         rootViewController.setViewControllers([UIHostingController(rootView: cheeseListView)], animated: true)
     }
     
@@ -37,5 +38,11 @@ extension AppCoordinator: CoordinatorProtocol {
         window.makeKeyAndVisible()
         
         showCheeseListViewController()
+    }
+}
+
+extension AppCoordinator: CheeseListViewModelDelegate {
+    func showDetail(cheese: Cheese) {
+        print("Show detail of \(cheese)")
     }
 }

@@ -10,7 +10,7 @@ import Combine
 import Foundation
 
 protocol CheeseListViewModelDelegate: class {
-    func showDetail()
+    func showDetail(cheese: Cheese)
 }
 
 final class CheeseListViewModel: ObservableObject {
