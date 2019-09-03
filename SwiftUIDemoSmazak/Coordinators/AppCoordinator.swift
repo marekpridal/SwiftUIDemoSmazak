@@ -20,7 +20,7 @@ final class AppCoordinator {
     }
     
     private func showCheeseListViewController() {
-        let cheeseListView = CheeseListView(viewModel: CheeseListViewModel())
+        let cheeseListView = CheeseListView(viewModel: CheeseListViewModel(api: MockApi()))
         rootViewController.setViewControllers([UIHostingController(rootView: cheeseListView)], animated: true)
     }
     

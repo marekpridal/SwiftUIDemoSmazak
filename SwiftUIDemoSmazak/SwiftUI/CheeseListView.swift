@@ -19,6 +19,6 @@ struct CheeseListView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CheeseListView(viewModel: CheeseListViewModel())
+        CheeseListView(viewModel: CheeseListViewModel(api: MockApi()))
     }
 }
