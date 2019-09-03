@@ -22,7 +22,18 @@
 		DFE6AF72231E88BC000885D6 /* Cheese+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6AF71231E88BC000885D6 /* Cheese+Extension.swift */; };
 		DFE6AF75231E8AA8000885D6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFE6AF77231E8AA8000885D6 /* Localizable.strings */; };
 		DFE6AF79231E9312000885D6 /* CheeseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6AF78231E9312000885D6 /* CheeseCellView.swift */; };
+		DFE6AF81231E984E000885D6 /* SwiftUIDemoSmazakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6AF80231E984E000885D6 /* SwiftUIDemoSmazakTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFE6AF83231E984E000885D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF60D762231E771600BF47DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF60D769231E771600BF47DD;
+			remoteInfo = SwiftUIDemoSmazak;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DF60D76A231E771600BF47DD /* SwiftUIDemoSmazak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemoSmazak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,10 +53,20 @@
 		DFE6AF71231E88BC000885D6 /* Cheese+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cheese+Extension.swift"; sourceTree = "<group>"; };
 		DFE6AF76231E8AA8000885D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DFE6AF78231E9312000885D6 /* CheeseCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheeseCellView.swift; sourceTree = "<group>"; };
+		DFE6AF7E231E984E000885D6 /* SwiftUIDemoSmazakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIDemoSmazakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE6AF80231E984E000885D6 /* SwiftUIDemoSmazakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoSmazakTests.swift; sourceTree = "<group>"; };
+		DFE6AF82231E984E000885D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DF60D767231E771600BF47DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE6AF7B231E984E000885D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				DF60D76C231E771600BF47DD /* SwiftUIDemoSmazak */,
+				DFE6AF7F231E984E000885D6 /* SwiftUIDemoSmazakTests */,
 				DF60D76B231E771600BF47DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				DF60D76A231E771600BF47DD /* SwiftUIDemoSmazak.app */,
+				DFE6AF7E231E984E000885D6 /* SwiftUIDemoSmazakTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +189,15 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		DFE6AF7F231E984E000885D6 /* SwiftUIDemoSmazakTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFE6AF80231E984E000885D6 /* SwiftUIDemoSmazakTests.swift */,
+				DFE6AF82231E984E000885D6 /* Info.plist */,
+			);
+			path = SwiftUIDemoSmazakTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +218,24 @@
 			productReference = DF60D76A231E771600BF47DD /* SwiftUIDemoSmazak.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DFE6AF7D231E984E000885D6 /* SwiftUIDemoSmazakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE6AF85231E984E000885D6 /* Build configuration list for PBXNativeTarget "SwiftUIDemoSmazakTests" */;
+			buildPhases = (
+				DFE6AF7A231E984E000885D6 /* Sources */,
+				DFE6AF7B231E984E000885D6 /* Frameworks */,
+				DFE6AF7C231E984E000885D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFE6AF84231E984E000885D6 /* PBXTargetDependency */,
+			);
+			name = SwiftUIDemoSmazakTests;
+			productName = SwiftUIDemoSmazakTests;
+			productReference = DFE6AF7E231E984E000885D6 /* SwiftUIDemoSmazakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,6 +248,10 @@
 				TargetAttributes = {
 					DF60D769231E771600BF47DD = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					DFE6AF7D231E984E000885D6 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = DF60D769231E771600BF47DD;
 					};
 				};
 			};
@@ -215,6 +269,7 @@
 			projectRoot = "";
 			targets = (
 				DF60D769231E771600BF47DD /* SwiftUIDemoSmazak */,
+				DFE6AF7D231E984E000885D6 /* SwiftUIDemoSmazakTests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,6 +283,13 @@
 				DFE6AF75231E8AA8000885D6 /* Localizable.strings in Resources */,
 				DF60D777231E771700BF47DD /* Preview Assets.xcassets in Resources */,
 				DF60D774231E771700BF47DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE6AF7C231E984E000885D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +314,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFE6AF7A231E984E000885D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE6AF81231E984E000885D6 /* SwiftUIDemoSmazakTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFE6AF84231E984E000885D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF60D769231E771600BF47DD /* SwiftUIDemoSmazak */;
+			targetProxy = DFE6AF83231E984E000885D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DF60D778231E771700BF47DD /* LaunchScreen.storyboard */ = {
@@ -428,6 +506,46 @@
 			};
 			name = Release;
 		};
+		DFE6AF86231E984E000885D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV7TARSQ32;
+				INFOPLIST_FILE = SwiftUIDemoSmazakTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.marekpridal.SwiftUIDemoSmazakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIDemoSmazak.app/SwiftUIDemoSmazak";
+			};
+			name = Debug;
+		};
+		DFE6AF87231E984E000885D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV7TARSQ32;
+				INFOPLIST_FILE = SwiftUIDemoSmazakTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.marekpridal.SwiftUIDemoSmazakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIDemoSmazak.app/SwiftUIDemoSmazak";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +563,15 @@
 			buildConfigurations = (
 				DF60D77F231E771700BF47DD /* Debug */,
 				DF60D780231E771700BF47DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE6AF85231E984E000885D6 /* Build configuration list for PBXNativeTarget "SwiftUIDemoSmazakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE6AF86231E984E000885D6 /* Debug */,
+				DFE6AF87231E984E000885D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
