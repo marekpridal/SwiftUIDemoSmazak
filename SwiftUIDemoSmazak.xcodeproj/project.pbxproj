@@ -56,13 +56,12 @@
 		DF60D76C231E771600BF47DD /* SwiftUIDemoSmazak */ = {
 			isa = PBXGroup;
 			children = (
-				DF60D76D231E771600BF47DD /* AppDelegate.swift */,
-				DF60D76F231E771600BF47DD /* SceneDelegate.swift */,
-				DF60D771231E771600BF47DD /* ContentView.swift */,
-				DF60D773231E771700BF47DD /* Assets.xcassets */,
-				DF60D778231E771700BF47DD /* LaunchScreen.storyboard */,
-				DF60D77B231E771700BF47DD /* Info.plist */,
+				DF7A61A2231E7A54001ED84B /* App Support */,
+				DF7A61A4231E7A7C001ED84B /* Assets */,
+				DF7A61A1231E7A30001ED84B /* Coordinators */,
 				DF60D775231E771700BF47DD /* Preview Content */,
+				DF7A61A5231E7A8D001ED84B /* Storyboards */,
+				DF7A61A3231E7A6F001ED84B /* SwiftUI */,
 			);
 			path = SwiftUIDemoSmazak;
 			sourceTree = "<group>";
@@ -73,6 +72,47 @@
 				DF60D776231E771700BF47DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF7A61A1231E7A30001ED84B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		DF7A61A2231E7A54001ED84B /* App Support */ = {
+			isa = PBXGroup;
+			children = (
+				DF60D76D231E771600BF47DD /* AppDelegate.swift */,
+				DF60D76F231E771600BF47DD /* SceneDelegate.swift */,
+				DF60D77B231E771700BF47DD /* Info.plist */,
+			);
+			path = "App Support";
+			sourceTree = "<group>";
+		};
+		DF7A61A3231E7A6F001ED84B /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				DF60D771231E771600BF47DD /* ContentView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		DF7A61A4231E7A7C001ED84B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DF60D773231E771700BF47DD /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DF7A61A5231E7A8D001ED84B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DF60D778231E771700BF47DD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +328,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemoSmazak/Preview Content\"";
 				DEVELOPMENT_TEAM = JV7TARSQ32;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIDemoSmazak/Info.plist;
+				INFOPLIST_FILE = "SwiftUIDemoSmazak/App Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +348,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemoSmazak/Preview Content\"";
 				DEVELOPMENT_TEAM = JV7TARSQ32;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIDemoSmazak/Info.plist;
+				INFOPLIST_FILE = "SwiftUIDemoSmazak/App Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
