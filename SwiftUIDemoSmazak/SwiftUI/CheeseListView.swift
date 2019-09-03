@@ -15,7 +15,17 @@ struct CheeseListView: View {
     var body: some View {
         Group {
             List(viewModel.cheeses) { cheese in
-                Text(cheese.localizedName)
+                HStack {
+                    Image(systemName: cheese.type == .standard ? "heart.fill" : "heart.slash")
+                        .padding(.trailing, 15)
+                    VStack(alignment: .leading) {
+                        Text(cheese.formattedDate)
+                        Text(cheese.localizedName)
+                        Text(cheese.formattedWeight)
+                    }
+                    Spacer()
+                    Text(cheese.formattedPrice)
+                }
             }
         }
         .navigationBarTitle("CHEESE_LIST_VIEW_TITLE")

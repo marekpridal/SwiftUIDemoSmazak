@@ -22,4 +22,22 @@ extension Cheese: Identifiable {
             return "STANDARD"
         }
     }
+    
+    var formattedDate: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        return dateFormatter.string(from: date)
+    }
+    
+    var formattedWeight: String {
+        let numberFormatter = NumberFormatter()
+        return numberFormatter.string(from: NSNumber(value: weight))! + " " + "g"
+    }
+    
+    var formattedPrice: String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.currencyCode = currencyCode
+        numberFormatter.numberStyle = .currency
+        return numberFormatter.string(from: NSNumber(value: price)) ?? ""
+    }
 }
