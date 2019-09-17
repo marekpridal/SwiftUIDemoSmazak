@@ -13,8 +13,12 @@ struct CheeseCellView: View {
     
     var body: some View {
         HStack {
-            Image(systemName: cheese.type == .standard ? "heart.fill" : "heart.slash")
-                .padding(.trailing, 15)
+            Group {
+                Image(systemName: cheese.type == .standard ? "heart.fill" : "heart.slash")
+                    .padding()
+                    .background(Circle().fill(Color.red))
+            }
+            .padding(.trailing, 15)
             VStack(alignment: .leading) {
                 Text(cheese.formattedDate)
                     .font(.system(size: 13))
