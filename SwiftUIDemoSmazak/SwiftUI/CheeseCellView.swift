@@ -32,6 +32,7 @@ struct CheeseCellView: View {
                     .textStyle(SmallRedTextStyle())
                     .padding(.bottom, 5)
             }
+            .layoutPriority(1.0)
             Spacer()
             Text(cheese.formattedPrice)
         }
