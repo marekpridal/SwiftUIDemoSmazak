@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF47E6822330D0E400C619BC /* SmallRedTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF47E6812330D0E400C619BC /* SmallRedTextStyle.swift */; };
 		DF60D76E231E771600BF47DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60D76D231E771600BF47DD /* AppDelegate.swift */; };
 		DF60D770231E771600BF47DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60D76F231E771600BF47DD /* SceneDelegate.swift */; };
 		DF60D772231E771600BF47DD /* CheeseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60D771231E771600BF47DD /* CheeseListView.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF47E6812330D0E400C619BC /* SmallRedTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRedTextStyle.swift; sourceTree = "<group>"; };
 		DF60D76A231E771600BF47DD /* SwiftUIDemoSmazak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemoSmazak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF60D76D231E771600BF47DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF60D76F231E771600BF47DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF47E6802330D0CC00C619BC /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DF47E6812330D0E400C619BC /* SmallRedTextStyle.swift */,
+			);
+			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
 		DF60D761231E771600BF47DD = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 				DF60D775231E771700BF47DD /* Preview Content */,
 				DF7A61A5231E7A8D001ED84B /* Storyboards */,
 				DF7A61A3231E7A6F001ED84B /* SwiftUI */,
+				DF47E6802330D0CC00C619BC /* View Modifiers */,
 				DF7A61AA231E8098001ED84B /* ViewModels */,
 			);
 			path = SwiftUIDemoSmazak;
@@ -306,6 +317,7 @@
 				DF60D76E231E771600BF47DD /* AppDelegate.swift in Sources */,
 				DF7A61A9231E7B51001ED84B /* CoordinatorProtocol.swift in Sources */,
 				DF7A61AC231E80BB001ED84B /* CheeseListViewModel.swift in Sources */,
+				DF47E6822330D0E400C619BC /* SmallRedTextStyle.swift in Sources */,
 				DFE6AF72231E88BC000885D6 /* Cheese+Extension.swift in Sources */,
 				DFE6AF79231E9312000885D6 /* CheeseCellView.swift in Sources */,
 				DFE6AF6B231E839A000885D6 /* Cheese.swift in Sources */,

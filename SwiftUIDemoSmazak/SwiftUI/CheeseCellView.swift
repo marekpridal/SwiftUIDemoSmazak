@@ -25,8 +25,7 @@ struct CheeseCellView: View {
                     .fontWeight(.medium)
                     .padding(.bottom, 5)
                 Text(cheese.formattedWeight)
-                    .font(.system(size: 13))
-                    .fontWeight(.medium)
+                    .textStyle(SmallRedTextStyle())
                     .padding(.bottom, 5)
             }
             Spacer()
